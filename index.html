@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card h2 {
+    margin-top: 0;
+}
+.metrics {
+    display: flex;
+    flex-wrap: wrap;
+}
+.metric {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+}
+.metric span {
+    font-weight: bold;
+}
+.small-text {
+    font-size: 0.9em;
+    color: #555;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Dashboard Summary</h1>
+</header>
+<div class="grid">
+    <div class="card">
+        <h2>Licenses</h2>
+        <div class="metrics">
+            <div class="metric">
+                <span>Blocked User Cost:</span> $0.00/month
+                <div class="small-text">In licenses for 1 blocked user(s).</div>
+            </div>
+            <div class="metric">
+                <span>Unassigned License Cost:</span> $66.00/month
+                <div class="small-text">In 3 licenses not assigned to user(s).</div>
+            </div>
+            <div class="metric">
+                <span>Inactive User Cost:</span> $131.25/month
+                <div class="small-text">In licenses assigned to 8 inactive user(s).</div>
+            </div>
+        </div>
+        <div class="small-text">
+            View License Cost Report • View Blocked Users Report
+        </div>
+    </div>
+    <div class="card">
+        <h2>Teams</h2>
+        <div class="metrics">
+            <div class="metric">
+                <span>Orphan Teams:</span> 7
+            </div>
+            <div class="metric">
+                <span>Teams Activity:</span> 23
+            </div>
+            <div class="metric">
+                <span>Teams Members:</span> 23
+            </div>
+            <div class="metric">
+                <span>Archived Teams:</span> 15
+            </div>
+        </div>
+        <div class="small-text">
+            View Teams Report • View Teams Activity
+        </div>
+    </div>
+    <div class="card">
+        <h2>Communication Trends</h2>
+        <div class="metrics">
+            <div class="metric">
+                <span>Received Emails:</span> 46 (29% decrease)
+            </div>
+            <div class="metric">
+                <span>Read Emails:</span> 45 (13% increase)
+            </div>
+            <div class="metric">
+                <span>Sent Emails:</span> 4 (0% increase)
+            </div>
+            <div class="metric">
+                <span>Private Messages:</span> Calls / Meetings data
+            </div>
+        </div>
+        <div class="small-text">View Emails Activity Trends</div>
+    </div>
+    <div class="card">
+        <h2>Copilot Adoption Rate</h2>
+        <p class="metric"><span>33.33%</span></p>
+        <div class="small-text">Usage of assigned Copilot licenses in the last 30 days.</div>
+        <div class="small-text">View Adoption Report</div>
+    </div>
+    <div class="card">
+        <h2>Teams Privacy</h2>
+        <div class="metrics">
+            <div class="metric">
+                <span>Active Users:</span> 1 (33.3%)
+            </div>
+            <div class="metric">
+                <span>Inactive Users:</span> 2 (66.7%)
+            </div>
+            <div class="metric">
+                <span>Private Teams:</span> 7 (30.4%)
+            </div>
+            <div class="metric">
+                <span>Public Teams:</span> 16 (69.6%)
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h2>New Teams</h2>
+        <div class="metrics">
+            <div class="metric">
+                <span>Last Week:</span> 0 (0.0%)
+            </div>
+            <div class="metric">
+                <span>Last Month:</span> 0 (0.0%)
+            </div>
+            <div class="metric">
+                <span>Last Year:</span> 4 (100.0%)
+            </div>
+        </div>
+        <div class="small-text">4 new Teams created in the last year.</div>
+    </div>
+    <div class="card">
+        <h2>Devices Activity Trends</h2>
+        <div class="metrics">
+            <div class="metric"><span>Web:</span> 0 (0% increase)</div>
+            <div class="metric"><span>Windows Phone:</span> 0 (0% increase)</div>
+            <div class="metric"><span>10S:</span> 0 (100% decrease)</div>
+            <div class="metric"><span>Mac:</span> 0 (0% increase)</div>
+            <div class="metric"><span>Android Phone:</span> 8 (11% decrease)</div>
+            <div class="metric"><span>Windows:</span> 0 (100% decrease)</div>
+            <div class="metric"><span>Chrome OS:</span> 0 (0% increase)</div>
+            <div class="metric"><span>Linux:</span> 0 (0% increase)</div>
+        </div>
+        <div class="small-text">View Devices Activity Trends</div>
+    </div>
+</div>
+</body>
+</html>
